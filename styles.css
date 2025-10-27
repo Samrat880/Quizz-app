@@ -123,13 +123,22 @@ button{
 }
 
 #start-btn, #restart-btn{
+    display: block; /* ensure margin:auto centers the button */
     width:100%;
     max-width:320px;
-    margin:1rem auto 0 auto;
+    margin:1rem auto 0;
     background: linear-gradient(90deg,var(--primary), var(--primary-600));
     color:#fff;
     box-shadow: 0 8px 20px rgba(79,70,229,0.08);
     font-weight:600;
+    text-align:center;
+}
+
+/* Utility: center any single inline control inside the quiz card */
+.quiz-center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 #next-btn{
